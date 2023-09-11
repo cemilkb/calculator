@@ -1,12 +1,13 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    background-color: black;
-    color: white;
 }
 
-.box{
-    border: 2px solid white;
+body{
+    background-image: url(kullan.jpg);
+}
+
+.box {
     width: 360px;
     height: 420px;
     display: flex;
@@ -14,38 +15,83 @@
     justify-content: center;
     gap: 10px;
     box-sizing: border-box;
-    padding: 20px 0px 10px 0px;
+    padding: 30px 10px 20px 10px;
     margin: 8% auto 30px auto;
+    border-radius: 30px;
+    background-color: black;
 }
 
-.screen{
-    border: 2px solid white;
-    width: 90%;
+.screen {
+    width: 95%;
     display: flex;
     box-sizing: border-box;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
 }
 
-.entry{
-margin: auto 10px 7px auto;
+.entry {
+    margin: auto 18px 7px auto;
+font-size: x-large;
+font-weight: bold;
 }
 
 
-.digit,.operator{
-    border: 2px solid white;
+.digit {
     width: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #EEEDED;
+    color: #090580;
+    font-weight: bold;
+    font-size: xx-large;
+    border-radius: 5px;
 }
 
-.delete{
-    width: 154px;
-    border: solid white 2px;
+.operator {
+    width: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #E57C23;
+    color: #F8F0E5;
+    font-size: xx-large;
+    border-radius: 5px;
+
 }
 
-footer{
-    text-align: center;
+.delete {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #090580;
+    color: #EEEDED;
+    font-weight: bold;
+    font-size: xx-large;
+    border-radius: 5px;
+}
+
+.others {
+    width: 154px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: xx-large;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #0F2C59;
+    color: #F8F0E5;
+}
+
+footer {
+    font-size: x-large;
+    font-weight: bold;
+    margin: auto;
+    background-color: white;
+    width: max-content;
 }
