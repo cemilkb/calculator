@@ -3,8 +3,9 @@
     padding: 0px;
 }
 
-body{
+body {
     background-image: url(kullan.jpg);
+    background-position: center;
 }
 
 .box {
@@ -18,7 +19,9 @@ body{
     padding: 30px 10px 20px 10px;
     margin: 8% auto 30px auto;
     border-radius: 30px;
-    background-color: black;
+    background-image: url(https://images.pexels.com/photos/3109850/pexels-photo-3109850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
 }
 
 .screen {
@@ -28,12 +31,14 @@ body{
     height: 50px;
     border-radius: 30px;
     background-color: white;
+
 }
 
 .entry {
     margin: auto 18px 7px auto;
-font-size: x-large;
-font-weight: bold;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(75, 0, 128);;
 }
 
 
@@ -47,6 +52,22 @@ font-weight: bold;
     font-weight: bold;
     font-size: xx-large;
     border-radius: 5px;
+
+    transition: all 0.5s;
+}
+
+.digit:hover {
+    cursor: pointer;
+    box-shadow: #090580 2px 2px 18px 3px;
+    text-shadow: #090580 0px 0px 3px;
+}
+
+.digit:active {
+    cursor: pointer;
+
+    box-shadow: #E57C23 2px 2px 18px 3px;
+    text-shadow: #E57C23 0px 0px 3px;
+    scale: 0.8;
 }
 
 .operator {
@@ -58,7 +79,21 @@ font-weight: bold;
     color: #F8F0E5;
     font-size: xx-large;
     border-radius: 5px;
+    transition: all 0.5s;
+}
 
+.operator:hover {
+    cursor: pointer;
+    box-shadow: #E57C23 2px 2px 18px 5px;
+    text-shadow: #E57C23 0px 0px 3px;
+}
+
+.operator:active {
+    cursor: pointer;
+
+    box-shadow: #090580 2px 2px 18px 3px;
+    text-shadow: #090580 0px 0px 3px;
+    scale: 0.8;
 }
 
 .delete {
@@ -71,6 +106,21 @@ font-weight: bold;
     font-weight: bold;
     font-size: xx-large;
     border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.delete:hover {
+    cursor: pointer;
+    box-shadow: grey 2px 2px 18px 5px;
+    text-shadow: #090580 0px 0px 3px;
+}
+
+.delete:active {
+    cursor: pointer;
+
+    box-shadow: #E57C23 2px 2px 18px 3px;
+    text-shadow: #E57C23 0px 0px 3px;
+    scale: 0.8;
 }
 
 .others {
@@ -86,12 +136,30 @@ font-weight: bold;
     border-radius: 5px;
     background-color: #0F2C59;
     color: #F8F0E5;
+    transition: all 0.5s
+}
+
+
+.others:hover {
+    cursor: pointer;
+    box-shadow: red 2px 2px 18px 5px;
+    text-shadow: red 0px 0px 3px;
+}
+
+.others:active {
+    cursor: pointer;
+    background-color: green;
+    box-shadow: white 2px 2px 18px 3px;
+    text-shadow: white 0px 0px 3px;
+    scale: 0.8;
 }
 
 footer {
     font-size: x-large;
     font-weight: bold;
     margin: auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.47);
     width: max-content;
+    color: #090580;
+    text-shadow: #090580 10px 10px 10px;
 }
