@@ -6,6 +6,8 @@ let entry = document.querySelector(".entry")
 let allClear = document.getElementById("ac")
 let clear = document.getElementById("c")
 let equal = document.getElementById("equal")
+let dot = document.getElementById("dot")
+let dotCheck = false
 
 // Adding event listener
 
@@ -23,6 +25,9 @@ let newText = entry.textContent.slice(0, -1)
         newText = entry.textContent.slice(0, -3)
         opCheck = false
     }
+    else if (chechk == "."){
+        dotCheck = false
+    }
 
     entry.textContent = newText
 })
@@ -39,12 +44,20 @@ operator.forEach((e, k) => {
        if(opCheck == false){
         entry.textContent += op[k]
         opCheck = true
+        dotCheck = false
        }
     })
 
 });
 
 equal.addEventListener("click", doing)
+
+dot.addEventListener("click", ()=>{
+if(dotCheck == false ){
+    entry.textContent += "."
+}
+    dotCheck = true
+})
 
 // Function
 
