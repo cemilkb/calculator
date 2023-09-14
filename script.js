@@ -181,3 +181,50 @@ dot.addEventListener("transitionend", removeTransitionOthers)
 equal.addEventListener("transitionend", removeTransitionOthers)
 clear.addEventListener("transitionend", removeTransitionDelete)
 
+// Dark Mode
+
+let body = document.querySelector("body")
+let footer = document.querySelector("footer")
+let box = document.querySelector(".box")
+let screen = document.querySelector(".screen")
+let modButton = document.getElementById("mode-button")
+let mode = 0
+
+modButton.addEventListener("click", () => {
+    if(mode == 0){
+        mode = 1
+        modButton.classList.remove("light-mode")
+        modButton.classList.add("dark-mode")
+        modButton.textContent = "Dark Mode: ON"
+
+        body.style.backgroundImage = "url(https://images.pexels.com/photos/3109850/pexels-photo-3109850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
+        body.style.backgroundSize = "cover"
+        body.style.backgroundPosition = "center"
+        
+        
+        box.style.backgroundImage = "url(kullan.jpg)"
+        screen.style.backgroundColor = "rgb(75, 0, 128)"
+        
+        entry.style.color = "white"
+
+    }else if (mode == 1){
+        mode = 0
+        modButton.classList.add("light-mode")
+        modButton.classList.remove("dark-mode")
+        modButton.textContent = "Dark Mode: OFF"
+
+        body.style.backgroundImage = "url(kullan.jpg)"
+        body.style.backgroundSize = "cover"
+        body.style.backgroundPosition = "center"
+        
+        
+        box.style.backgroundImage = "url(https://images.pexels.com/photos/3109850/pexels-photo-3109850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
+        screen.style.backgroundColor = "white"
+        
+        entry.style.color = "rgb(75, 0, 128)"
+
+    }
+    console.log(mode)
+})
+
+
