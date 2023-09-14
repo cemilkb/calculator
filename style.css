@@ -31,14 +31,14 @@ body {
     height: 50px;
     border-radius: 30px;
     background-color: white;
-
 }
 
 .entry {
     margin: auto 18px 7px auto;
-    font-size: x-large;
+    font-size: 22px;
     font-weight: bold;
-    color: rgb(75, 0, 128);;
+    color: rgb(75, 0, 128);
+    word-break: break-all;
 }
 
 
@@ -53,7 +53,7 @@ body {
     font-size: xx-large;
     border-radius: 5px;
 
-    transition: all 0.5s;
+    transition: all 0.09s;
 }
 
 .digit:hover {
@@ -64,10 +64,15 @@ body {
 
 .digit:active {
     cursor: pointer;
-
     box-shadow: #E57C23 2px 2px 18px 3px;
     text-shadow: #E57C23 0px 0px 3px;
-    scale: 0.8;
+    scale: 0.9;
+}
+.digitA {
+    cursor: pointer;
+    box-shadow: #E57C23 2px 2px 18px 3px;
+    text-shadow: #E57C23 0px 0px 3px;
+    scale: 0.9;
 }
 
 .operator {
@@ -79,7 +84,7 @@ body {
     color: #F8F0E5;
     font-size: xx-large;
     border-radius: 5px;
-    transition: all 0.5s;
+    transition: all 0.09s;
 }
 
 .operator:hover {
@@ -90,7 +95,13 @@ body {
 
 .operator:active {
     cursor: pointer;
+    box-shadow: #090580 2px 2px 18px 3px;
+    text-shadow: #090580 0px 0px 3px;
+    scale: 0.8;
+}
 
+.operatorA {
+    cursor: pointer;
     box-shadow: #090580 2px 2px 18px 3px;
     text-shadow: #090580 0px 0px 3px;
     scale: 0.8;
@@ -106,13 +117,21 @@ body {
     font-weight: bold;
     font-size: xx-large;
     border-radius: 5px;
-    transition: all 0.5s;
+    transition: all 0.09s;
 }
 
 .delete:hover {
     cursor: pointer;
     box-shadow: grey 2px 2px 18px 5px;
     text-shadow: #090580 0px 0px 3px;
+}
+
+.deleteA {
+    cursor: pointer;
+
+    box-shadow: #E57C23 2px 2px 18px 3px;
+    text-shadow: #E57C23 0px 0px 3px;
+    scale: 0.8;
 }
 
 .delete:active {
@@ -136,7 +155,7 @@ body {
     border-radius: 5px;
     background-color: #0F2C59;
     color: #F8F0E5;
-    transition: all 0.5s
+    transition: all 0.09s
 }
 
 
@@ -146,6 +165,14 @@ body {
     text-shadow: red 0px 0px 3px;
 }
 
+.othersA {
+    cursor: pointer;
+    background-color: green;
+    box-shadow: white 2px 2px 18px 3px;
+    text-shadow: white 0px 0px 3px;
+    scale: 0.8;
+}
+
 .others:active {
     cursor: pointer;
     background-color: green;
@@ -153,6 +180,7 @@ body {
     text-shadow: white 0px 0px 3px;
     scale: 0.8;
 }
+
 
 footer {
     font-size: x-large;
