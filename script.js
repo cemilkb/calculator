@@ -197,7 +197,7 @@ modButton.addEventListener("click", () => {
         modButton.classList.add("dark-mode")
         modButton.textContent = "Dark Mode: ON"
 
-        body.style.backgroundImage = "url(https://images.pexels.com/photos/3109850/pexels-photo-3109850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
+        body.style.backgroundImage = "url(black2.jpg)"
         body.style.backgroundSize = "cover"
         body.style.backgroundPosition = "center"
         
@@ -218,7 +218,7 @@ modButton.addEventListener("click", () => {
         body.style.backgroundPosition = "center"
         
         
-        box.style.backgroundImage = "url(https://images.pexels.com/photos/3109850/pexels-photo-3109850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
+        box.style.backgroundImage = "url(black2.jpg)"
         screen.style.backgroundColor = "white"
         
         entry.style.color = "rgb(75, 0, 128)"

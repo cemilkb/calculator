@@ -20,7 +20,7 @@ body {
     padding: 30px 10px 20px 10px;
     margin: 0px auto 30px auto;
     border-radius: 30px;
-    background-image: url(https://images.pexels.com/photos/3109850/pexels-photo-3109850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(black2.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -69,6 +69,7 @@ body {
     text-shadow: #E57C23 0px 0px 3px;
     scale: 0.9;
 }
+
 .digitA {
     cursor: pointer;
     box-shadow: #E57C23 2px 2px 18px 3px;
@@ -187,10 +188,13 @@ footer {
     font-size: x-large;
     font-weight: bold;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.47);
     width: max-content;
-    color: #090580;
-    text-shadow: #090580 10px 10px 10px;
+}
+
+a {
+    color: red;
+    text-shadow: red 10px 10px 10px;
+    text-decoration: none;
 }
 
 .light-mode {
@@ -242,5 +246,5 @@ footer {
     scale: 0.8;
     background-color: black;
     color: white;
-    border: 2px solid black  ;
+    border: 2px solid black;
 }
